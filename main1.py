@@ -1,0 +1,10 @@
+name=input("What is your name?:")
+maths=int(input("What is your maths score?:"))
+english=int(input("What is your english score?:"))
+hindi=int(input("What is your hindi score?:"))
+total=int(maths+english+hindi)
+average=total/3
+print("~~~~~Student result~~~~~")
+print(f"Nmae : {name}")
+print(F"Total : {total}")
+print(f"Average :{average}")
