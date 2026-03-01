@@ -1,11 +1,9 @@
-import math
-r = float(input("Enter radius:"))
-area = math.pi*r*r
-price = area*2
-if area>200:
-    print("Large Pizza!")
+num1=int(input("Enter the number1:"))
+num2=int(input("Enter the number2:"))
+num3=int(input("Enter the number3:"))
+if num1>=num2 and num1>=num3:
+    print("num1 is largest:",num1)
+elif num2>=num1 and num2>=num3:
+    print("num2 is largest:",num2)
 else:
-    print("Small Pizza!")
-print(f"Area:{round(area,2)}")
- 
-print(f"Price:{round(price,2)}")
+    print("num3 is largest:",num3)
