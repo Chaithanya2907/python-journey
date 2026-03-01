@@ -1,10 +1,6 @@
-name=input("What is your name?:")
-maths=int(input("What is your maths score?:"))
-english=int(input("What is your english score?:"))
-hindi=int(input("What is your hindi score?:"))
-total=int(maths+english+hindi)
-average=total/3
-print("~~~~~Student result~~~~~")
-print(f"Nmae : {name}")
-print(F"Total : {total}")
-print(f"Average :{average}")
+name=str(input("Enter an string:"))
+count=0
+for i in name:
+    if i.lower() in "aeiou":
+        count=count+1
+print(count)
