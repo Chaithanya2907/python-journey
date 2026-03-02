@@ -1,6 +1,9 @@
-name=str(input("Enter an string:"))
-count=0
-for i in name:
-    if i.lower() in "aeiou":
-        count=count+1
-print(count)
+numbers=[]
+for i in range(5):
+    num=int(input("Enter number:"))
+    numbers.append(num)
+total=sum(numbers)
+average=total/len(numbers)
+print(numbers)
+print(total)
+print(average)
