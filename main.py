@@ -1,12 +1,15 @@
-number=int(input("Enter a number:"))
-if number>0:
-    print("positive")
-elif number<0:
-    print("Negative")
+a=int(input("Enter a number:"))
+b=int(input("Enter a number:"))
+c=int(input("Enter a number:"))
+if a>b and a>c:
+    print("largest is:",a)
+elif b>a and b>c:
+    print("largest is:",b)
 else:
-    print("Zero")
-if number%2==0:
-    print("even")
+    print("largest is:",c)
+if a<b and a<c:
+    print("lowest is:",a)
+elif b<a and b<c:
+    print("lowest is:",b)
 else:
-    print("Odd")
-    
+    print("lowest is :",c)
