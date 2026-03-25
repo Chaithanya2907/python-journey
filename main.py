@@ -1,15 +1,11 @@
-a=int(input("Enter a number:"))
-b=int(input("Enter a number:"))
-c=int(input("Enter a number:"))
-if a>b and a>c:
-    print("largest is:",a)
-elif b>a and b>c:
-    print("largest is:",b)
-else:
-    print("largest is:",c)
-if a<b and a<c:
-    print("lowest is:",a)
-elif b<a and b<c:
-    print("lowest is:",b)
-else:
-    print("lowest is :",c)
+ text = input("Enter a string: ")
+
+count = {}
+
+for ch in text:
+    if ch in count:
+        count[ch] += 1
+    else:
+        count[ch] = 1
+
+print("Character count:", count)
